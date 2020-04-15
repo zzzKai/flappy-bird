@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2AF5F1A824461F3600D95D02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5F1A724461F3600D95D02 /* main.cpp */; };
-		2AF5F1B424461FC600D95D02 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1AF24461FC500D95D02 /* libsfml-network.2.5.1.dylib */; };
-		2AF5F1B524461FC600D95D02 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B024461FC500D95D02 /* libsfml-audio.2.5.1.dylib */; };
-		2AF5F1B624461FC600D95D02 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B124461FC500D95D02 /* libsfml-graphics.2.5.1.dylib */; };
-		2AF5F1B724461FC600D95D02 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B224461FC600D95D02 /* libsfml-window.2.5.1.dylib */; };
-		2AF5F1B824461FC600D95D02 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B324461FC600D95D02 /* libsfml-system.2.5.1.dylib */; };
+		2AF5F1BA2446266200D95D02 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B024461FC500D95D02 /* libsfml-audio.2.5.1.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		2AF5F1BB2446266200D95D02 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B124461FC500D95D02 /* libsfml-graphics.2.5.1.dylib */; };
+		2AF5F1BC2446266200D95D02 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1AF24461FC500D95D02 /* libsfml-network.2.5.1.dylib */; };
+		2AF5F1BD2446266200D95D02 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B324461FC600D95D02 /* libsfml-system.2.5.1.dylib */; };
+		2AF5F1BE2446266200D95D02 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B224461FC600D95D02 /* libsfml-window.2.5.1.dylib */; };
+		2AF5F1E2244689FE00D95D02 /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5F1E0244689FE00D95D02 /* StateMachine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,18 +36,21 @@
 		2AF5F1B124461FC500D95D02 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
 		2AF5F1B224461FC600D95D02 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
 		2AF5F1B324461FC600D95D02 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		2AF5F1DF244688E100D95D02 /* State.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		2AF5F1E0244689FE00D95D02 /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		2AF5F1E1244689FE00D95D02 /* StateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AF5F1A124461F3600D95D02 /* Frameworks */ = {
+		2AF5F1B92446264600D95D02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF5F1B424461FC600D95D02 /* libsfml-network.2.5.1.dylib in Frameworks */,
-				2AF5F1B524461FC600D95D02 /* libsfml-audio.2.5.1.dylib in Frameworks */,
-				2AF5F1B624461FC600D95D02 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
-				2AF5F1B724461FC600D95D02 /* libsfml-window.2.5.1.dylib in Frameworks */,
-				2AF5F1B824461FC600D95D02 /* libsfml-system.2.5.1.dylib in Frameworks */,
+				2AF5F1BA2446266200D95D02 /* libsfml-audio.2.5.1.dylib in Frameworks */,
+				2AF5F1BB2446266200D95D02 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+				2AF5F1BC2446266200D95D02 /* libsfml-network.2.5.1.dylib in Frameworks */,
+				2AF5F1BD2446266200D95D02 /* libsfml-system.2.5.1.dylib in Frameworks */,
+				2AF5F1BE2446266200D95D02 /* libsfml-window.2.5.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				2AF5F1A724461F3600D95D02 /* main.cpp */,
+				2AF5F1DF244688E100D95D02 /* State.hpp */,
+				2AF5F1E0244689FE00D95D02 /* StateMachine.cpp */,
+				2AF5F1E1244689FE00D95D02 /* StateMachine.hpp */,
 			);
 			path = "flappy-bird";
 			sourceTree = "<group>";
@@ -98,7 +105,7 @@
 			buildConfigurationList = 2AF5F1AB24461F3600D95D02 /* Build configuration list for PBXNativeTarget "flappy-bird" */;
 			buildPhases = (
 				2AF5F1A024461F3600D95D02 /* Sources */,
-				2AF5F1A124461F3600D95D02 /* Frameworks */,
+				2AF5F1B92446264600D95D02 /* Frameworks */,
 				2AF5F1A224461F3600D95D02 /* CopyFiles */,
 			);
 			buildRules = (
@@ -148,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF5F1A824461F3600D95D02 /* main.cpp in Sources */,
+				2AF5F1E2244689FE00D95D02 /* StateMachine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
