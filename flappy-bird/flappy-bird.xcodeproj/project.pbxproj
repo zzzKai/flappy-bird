@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB7060244828DC00B6B69C /* AssetManager.cpp */; };
 		2ABB706524483A6E00B6B69C /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB706324483A6E00B6B69C /* InputManager.cpp */; };
+		2ABB706824483DD500B6B69C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB706624483DD500B6B69C /* Game.cpp */; };
 		2AF5F1A824461F3600D95D02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5F1A724461F3600D95D02 /* main.cpp */; };
 		2AF5F1BA2446266200D95D02 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B024461FC500D95D02 /* libsfml-audio.2.5.1.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		2AF5F1BB2446266200D95D02 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5F1B124461FC500D95D02 /* libsfml-graphics.2.5.1.dylib */; };
@@ -35,6 +36,8 @@
 		2ABB7061244828DC00B6B69C /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
 		2ABB706324483A6E00B6B69C /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
 		2ABB706424483A6E00B6B69C /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		2ABB706624483DD500B6B69C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		2ABB706724483DD500B6B69C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		2AF5F1A424461F3600D95D02 /* flappy-bird */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "flappy-bird"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF5F1A724461F3600D95D02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2AF5F1AF24461FC500D95D02 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				2ABB7061244828DC00B6B69C /* AssetManager.hpp */,
 				2ABB706324483A6E00B6B69C /* InputManager.cpp */,
 				2ABB706424483A6E00B6B69C /* InputManager.hpp */,
+				2ABB706624483DD500B6B69C /* Game.cpp */,
+				2ABB706724483DD500B6B69C /* Game.hpp */,
 			);
 			path = "flappy-bird";
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */,
 				2AF5F1A824461F3600D95D02 /* main.cpp in Sources */,
 				2AF5F1E2244689FE00D95D02 /* StateMachine.cpp in Sources */,
+				2ABB706824483DD500B6B69C /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
