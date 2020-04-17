@@ -6,10 +6,10 @@
 //  Copyright © 2020 kai. All rights reserved.
 //
 
-#include <iostream>
 #include "Game.hpp"
+#include "DEFINITIONS.hpp"
+
 
 int main() {
-    Kai::Game(800, 600, "SFML Starter");
-    return EXIT_SUCCESS;
+    Kai::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Flappy Bird");
 }
