@@ -6,11 +6,10 @@
 //  Copyright © 2020 kai. All rights reserved.
 //
 
-#pragma once
-
 #include <sstream>
 #include <iostream>
 #include "SplashState.hpp"
+#include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
 
 
@@ -38,7 +37,7 @@ namespace Kai {
     
     void SplashState::Update(float dt) {
         if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME) {
-            std::cout << "Go To Main Menu" << std::endl;
+            _data->machine.AddState(StateRef(new MainMenuState(_data)), true);
         }
     }
     
