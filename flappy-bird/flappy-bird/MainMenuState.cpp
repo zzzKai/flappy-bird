@@ -10,6 +10,7 @@
 #include <sstream>
 #include <iostream>
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include "DEFINITIONS.hpp"
 
 
@@ -41,7 +42,7 @@ namespace Kai {
             }
             
             if (_data->input.IsSpiteClicked(_playButton, sf::Mouse::Left, _data->window)) {
-                std::cout << "Go To Game Screen" << std::endl;
+                _data->machine.AddState(StateRef(new GameState(_data)), true);
             }
         }
     }
