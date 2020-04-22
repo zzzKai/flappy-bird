@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A4DC918244A17D600D25CB4 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2ACAF9D824497D010027E38D /* Resources */; };
 		2A4DC91B244A17F300D25CB4 /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DC919244A17F300D25CB4 /* SplashState.cpp */; };
+		2A63E494244FED9A00839EB9 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A63E492244FED9A00839EB9 /* GameState.cpp */; };
 		2A6826D9244E3493008ADC18 /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6826D7244E3493008ADC18 /* MainMenuState.cpp */; };
 		2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB7060244828DC00B6B69C /* AssetManager.cpp */; };
 		2ABB706524483A6E00B6B69C /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB706324483A6E00B6B69C /* InputManager.cpp */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		2A4DC919244A17F300D25CB4 /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
 		2A4DC91A244A17F300D25CB4 /* SplashState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SplashState.hpp; sourceTree = "<group>"; };
+		2A63E492244FED9A00839EB9 /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		2A63E493244FED9A00839EB9 /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
 		2A6826D7244E3493008ADC18 /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
 		2A6826D8244E3493008ADC18 /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
 		2ABB7060244828DC00B6B69C /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				2A4DC91A244A17F300D25CB4 /* SplashState.hpp */,
 				2A6826D7244E3493008ADC18 /* MainMenuState.cpp */,
 				2A6826D8244E3493008ADC18 /* MainMenuState.hpp */,
+				2A63E492244FED9A00839EB9 /* GameState.cpp */,
+				2A63E493244FED9A00839EB9 /* GameState.hpp */,
 			);
 			path = "flappy-bird";
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6826D9244E3493008ADC18 /* MainMenuState.cpp in Sources */,
+				2A63E494244FED9A00839EB9 /* GameState.cpp in Sources */,
 				2ABB706524483A6E00B6B69C /* InputManager.cpp in Sources */,
 				2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */,
 				2A4DC91B244A17F300D25CB4 /* SplashState.cpp in Sources */,
