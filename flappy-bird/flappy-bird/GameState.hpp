@@ -11,6 +11,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "Game.hpp"
+#include "Pipe.hpp"
 
 namespace Kai {
     class GameState : public State {
@@ -27,5 +28,7 @@ namespace Kai {
             GameDataRef _data;
             
             sf::Sprite _background;
+            
+            Pipe *pipe;
     };
 }
