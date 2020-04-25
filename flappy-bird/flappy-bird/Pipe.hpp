@@ -10,6 +10,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Game.hpp"
+#include "DEFINITIONS.hpp"
 #include <vector>
 
 namespace Kai {
@@ -17,6 +18,10 @@ namespace Kai {
         public:
             Pipe(GameDataRef data);
             
+            void SpawnBottomPipe();
+            void SpawnTopPipe();
+            void SpawnInvisiblePipe();
+            void MovePipes(float dt);
             void DrawPipes();
             
         private:
