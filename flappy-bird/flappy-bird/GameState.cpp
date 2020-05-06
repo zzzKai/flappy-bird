@@ -53,6 +53,8 @@ namespace Kai {
         land->MoveLand(dt);
         
         if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY) {
+            pipe->RandomizePipeOffset();
+        
             pipe->SpawnInvisiblePipe();
             pipe->SpawnBottomPipe();
             pipe->SpawnTopPipe();
