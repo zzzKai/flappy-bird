@@ -26,7 +26,10 @@ namespace Kai {
         
         _data->assets.LoadTexture("Pipe Down", PIPE_DOWN_FILEPATH);
         
+        _data->assets.LoadTexture("Land", LAND_FILEPATH);
+        
         pipe = new Pipe(_data);
+        land = new Land(_data);
         
         _background.setTexture(this->_data->assets.GetTexture("Game Background"));
     }
@@ -47,6 +50,7 @@ namespace Kai {
     
     void GameState::Update(float dt) {
         pipe->MovePipes(dt);
+        land->MoveLand(dt);
         
         if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY) {
             pipe->SpawnInvisiblePipe();
@@ -64,6 +68,7 @@ namespace Kai {
         _data->window.draw(_background);
         
         pipe->DrawPipes();
+        land->DrawLand();
         
         _data->window.display();
     }
