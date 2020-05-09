@@ -28,8 +28,11 @@ namespace Kai {
         
         _data->assets.LoadTexture("Land", LAND_FILEPATH);
         
+        _data->assets.LoadTexture("Bird Frame 1", BIRD_FRAME_1_FILEPATH);
+        
         pipe = new Pipe(_data);
         land = new Land(_data);
+        bird = new Bird(_data);
         
         _background.setTexture(this->_data->assets.GetTexture("Game Background"));
     }
@@ -71,6 +74,7 @@ namespace Kai {
         
         pipe->DrawPipes();
         land->DrawLand();
+        bird->Draw();
         
         _data->window.display();
     }
