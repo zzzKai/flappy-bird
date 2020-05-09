@@ -13,6 +13,7 @@
 #include "Game.hpp"
 #include "Pipe.hpp"
 #include "Land.hpp"
+#include "Bird.hpp"
 
 namespace Kai {
     class GameState : public State {
@@ -33,6 +34,8 @@ namespace Kai {
             Pipe *pipe;
             
             Land *land;
+            
+            Bird *bird;
             
             sf::Clock clock;
     };
