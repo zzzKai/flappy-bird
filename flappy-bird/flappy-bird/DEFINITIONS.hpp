@@ -43,4 +43,4 @@
 #define GRAVITY 350.0f
 #define FLYING_SPEED 350.0f
 
-#define FLYING_DUTATION 0.25f 
+#define FLYING_DURATION 0.25f 
