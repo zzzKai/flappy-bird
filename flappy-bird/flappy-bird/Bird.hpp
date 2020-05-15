@@ -40,5 +40,7 @@ namespace Kai {
             sf::Clock _movementClock;
             
             int _birdState;
+            
+            float _rotation;
     };
 }
