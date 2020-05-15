@@ -21,7 +21,11 @@ namespace Kai {
             void Draw();
             
             void Animate(float dt);
-        
+            
+            void Update(float dt);
+            
+            void Tap();
+            
         private:
             GameDataRef _data;
             
@@ -32,5 +36,9 @@ namespace Kai {
             unsigned int _animationIterator;
             
             sf::Clock _clock;
+            
+            sf::Clock _movementClock;
+            
+            int _birdState;
     };
 }
