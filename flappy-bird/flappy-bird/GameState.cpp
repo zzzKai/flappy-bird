@@ -49,7 +49,7 @@ namespace Kai {
             }
             
             if (_data->input.IsSpiteClicked(_background, sf::Mouse::Left, _data->window)) {
-                
+                bird->Tap();
             }
         }
     }
@@ -69,6 +69,7 @@ namespace Kai {
         }
         
         bird->Animate(dt);
+        bird->Update(dt);
     }
     
     void GameState::Draw(float dt) {
