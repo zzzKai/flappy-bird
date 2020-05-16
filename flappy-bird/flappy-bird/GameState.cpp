@@ -52,6 +52,7 @@ namespace Kai {
             
             if (_data->input.IsSpiteClicked(_background, sf::Mouse::Left, _data->window)) {
                 if (_gameState != GameStates::eGameOver) {
+                    _gameState = GameStates::ePlaying;
                     bird->Tap();
                 }
             }
@@ -78,6 +79,13 @@ namespace Kai {
             }
             
             bird->Update(dt);
+            
+            std::vector<sf::Sprite> landSprites = land->GetSprites();
+            for (int i = 0; i < landSprites.size(); i++) {
+                if (collision.CheckSpriteCollision(bird->GetSprite(), landSprites.at(i))) {
+                    _gameState = GameStates::eGameOver;
+                }
+            }
         }
     }
     
