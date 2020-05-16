@@ -26,6 +26,8 @@ namespace Kai {
             
             void Tap();
             
+            const sf::Sprite &GetSprite() const;
+            
         private:
             GameDataRef _data;
             
