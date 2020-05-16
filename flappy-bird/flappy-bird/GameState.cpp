@@ -38,6 +38,8 @@ namespace Kai {
         bird = new Bird(_data);
         
         _background.setTexture(this->_data->assets.GetTexture("Game Background"));
+        
+        _gameState = GameStates::eReady;
     }
     
     void GameState::HandleInput() {
@@ -49,27 +51,34 @@ namespace Kai {
             }
             
             if (_data->input.IsSpiteClicked(_background, sf::Mouse::Left, _data->window)) {
-                bird->Tap();
+                if (_gameState != GameStates::eGameOver) {
+                    bird->Tap();
+                }
             }
         }
     }
     
     void GameState::Update(float dt) {
-        pipe->MovePipes(dt);
-        land->MoveLand(dt);
-        
-        if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY) {
-            pipe->RandomizePipeOffset();
-        
-            pipe->SpawnInvisiblePipe();
-            pipe->SpawnBottomPipe();
-            pipe->SpawnTopPipe();
-            
-            clock.restart();
+        if (_gameState != GameStates::eGameOver) {
+            bird->Animate(dt);
+            land->MoveLand(dt);
         }
         
-        bird->Animate(dt);
-        bird->Update(dt);
+        if (_gameState == GameStates::ePlaying) {
+            pipe->MovePipes(dt);
+            
+            if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY) {
+                pipe->RandomizePipeOffset();
+            
+                pipe->SpawnInvisiblePipe();
+                pipe->SpawnBottomPipe();
+                pipe->SpawnTopPipe();
+                
+                clock.restart();
+            }
+            
+            bird->Update(dt);
+        }
     }
     
     void GameState::Draw(float dt) {
