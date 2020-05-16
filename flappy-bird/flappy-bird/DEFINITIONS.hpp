@@ -46,3 +46,9 @@
 #define FLYING_DURATION 0.25f
 
 #define ROTATION_SPEED 100.0f
+
+enum GameStates {
+    eReady,
+    ePlaying,
+    eGameOver
+};
