@@ -14,6 +14,7 @@
 #include "Pipe.hpp"
 #include "Land.hpp"
 #include "Bird.hpp"
+#include "Collision.hpp"
 
 namespace Kai {
     class GameState : public State {
@@ -37,6 +38,10 @@ namespace Kai {
             
             Bird *bird;
             
+            Collision collision;
+            
             sf::Clock clock;
+            
+            int _gameState;
     };
 }
