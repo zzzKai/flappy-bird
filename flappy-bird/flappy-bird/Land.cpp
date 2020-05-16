@@ -37,4 +37,8 @@ namespace Kai {
             _data->window.draw(_landSprites.at(i));
         }
     }
+    
+    const std::vector<sf::Sprite> &Land::GetSprites() const {
+        return _landSprites;
+    }
 }
