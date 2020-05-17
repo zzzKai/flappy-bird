@@ -89,7 +89,7 @@ namespace Kai {
             
             std::vector<sf::Sprite> pipeSprites = pipe->GetSprites();
             for (int i = 0; i < pipeSprites.size(); i++) {
-                if (collision.CheckSpriteCollision(bird->GetSprite(), pipeSprites.at(i))) {
+                if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f)) {
                     _gameState = GameStates::eGameOver;
                 }
             }
