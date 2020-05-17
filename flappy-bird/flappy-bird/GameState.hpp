@@ -15,6 +15,7 @@
 #include "Land.hpp"
 #include "Bird.hpp"
 #include "Collision.hpp"
+#include "Flash.hpp"
 
 namespace Kai {
     class GameState : public State {
@@ -40,8 +41,11 @@ namespace Kai {
             
             Collision collision;
             
+            Flash *flash;
+            
             sf::Clock clock;
             
             int _gameState;
+
     };
 }

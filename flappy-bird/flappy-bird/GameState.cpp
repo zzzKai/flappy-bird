@@ -36,6 +36,7 @@ namespace Kai {
         pipe = new Pipe(_data);
         land = new Land(_data);
         bird = new Bird(_data);
+        flash = new Flash(_data);
         
         _background.setTexture(this->_data->assets.GetTexture("Game Background"));
         
@@ -94,6 +95,10 @@ namespace Kai {
                 }
             }
         }
+        
+        if (_gameState == GameStates::eGameOver) {
+            flash->Show(dt);
+        }
     }
     
     void GameState::Draw(float dt) {
@@ -105,6 +110,7 @@ namespace Kai {
         pipe->DrawPipes();
         land->DrawLand();
         bird->Draw();
+        flash->Draw();
         
         _data->window.display();
     }
