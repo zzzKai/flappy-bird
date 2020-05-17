@@ -86,6 +86,13 @@ namespace Kai {
                     _gameState = GameStates::eGameOver;
                 }
             }
+            
+            std::vector<sf::Sprite> pipeSprites = pipe->GetSprites();
+            for (int i = 0; i < pipeSprites.size(); i++) {
+                if (collision.CheckSpriteCollision(bird->GetSprite(), pipeSprites.at(i))) {
+                    _gameState = GameStates::eGameOver;
+                }
+            }
         }
     }
     
