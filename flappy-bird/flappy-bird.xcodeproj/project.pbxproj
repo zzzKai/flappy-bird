@@ -16,6 +16,7 @@
 		2A63E494244FED9A00839EB9 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A63E492244FED9A00839EB9 /* GameState.cpp */; };
 		2A6826D9244E3493008ADC18 /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6826D7244E3493008ADC18 /* MainMenuState.cpp */; };
 		2A7D5F4524664DEA00D1F74E /* Bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D5F4324664DEA00D1F74E /* Bird.cpp */; };
+		2A8E5342247111B20082600A /* Flash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E5340247111B20082600A /* Flash.cpp */; };
 		2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB7060244828DC00B6B69C /* AssetManager.cpp */; };
 		2ABB706524483A6E00B6B69C /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB706324483A6E00B6B69C /* InputManager.cpp */; };
 		2ABB706824483DD500B6B69C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB706624483DD500B6B69C /* Game.cpp */; };
@@ -67,6 +68,8 @@
 		2A6826D8244E3493008ADC18 /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
 		2A7D5F4324664DEA00D1F74E /* Bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bird.cpp; sourceTree = "<group>"; };
 		2A7D5F4424664DEA00D1F74E /* Bird.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bird.hpp; sourceTree = "<group>"; };
+		2A8E5340247111B20082600A /* Flash.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Flash.cpp; sourceTree = "<group>"; };
+		2A8E5341247111B20082600A /* Flash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Flash.hpp; sourceTree = "<group>"; };
 		2ABB7060244828DC00B6B69C /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		2ABB7061244828DC00B6B69C /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
 		2ABB706324483A6E00B6B69C /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				2A7D5F4424664DEA00D1F74E /* Bird.hpp */,
 				2A54E88C246FABAF000253FF /* Collision.cpp */,
 				2A54E88D246FABAF000253FF /* Collision.hpp */,
+				2A8E5340247111B20082600A /* Flash.cpp */,
+				2A8E5341247111B20082600A /* Flash.hpp */,
 			);
 			path = "flappy-bird";
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8E5342247111B20082600A /* Flash.cpp in Sources */,
 				2A54E88E246FABAF000253FF /* Collision.cpp in Sources */,
 				2A6826D9244E3493008ADC18 /* MainMenuState.cpp in Sources */,
 				2A63E494244FED9A00839EB9 /* GameState.cpp in Sources */,
