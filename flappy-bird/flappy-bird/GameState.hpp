@@ -46,6 +46,7 @@ namespace Kai {
             sf::Clock clock;
             
             int _gameState;
-
+            
+            int _score;
     };
 }
