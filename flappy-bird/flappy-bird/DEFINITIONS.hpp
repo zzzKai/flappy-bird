@@ -23,6 +23,7 @@
 
 #define PIPE_UP_FILEPATH "Resources/res/PipeUp.png"
 #define PIPE_DOWN_FILEPATH "Resources/res/PipeDown.png"
+#define SCORING_PIPE_FILEPATH "Resources/res/InvisibleScoringPipe.png"
 
 #define LAND_FILEPATH "Resources/res/Land.png"
 
