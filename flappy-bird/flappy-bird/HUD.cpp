@@ -11,7 +11,7 @@
 #include <string>
 
 namespace Kai {
-    HUD::HUD(GameDataRef data) {
+    HUD::HUD(GameDataRef data) : _data(data) {
         _scoreText.setFont(_data->assets.GetFont("Flappy Font"));
         _scoreText.setString("0");
         _scoreText.setCharacterSize(128);
