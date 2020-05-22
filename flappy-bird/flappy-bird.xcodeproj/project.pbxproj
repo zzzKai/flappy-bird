@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1B5D362477716F00DA9B05 /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B5D342477716F00DA9B05 /* HUD.cpp */; };
 		2A233275245295F800A9B864 /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A233273245295F800A9B864 /* Pipe.cpp */; };
 		2A307A7024513F960010C779 /* GameOverState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A307A6E24513F960010C779 /* GameOverState.cpp */; };
 		2A45EDE72462575E00177630 /* Land.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45EDE52462575E00177630 /* Land.cpp */; };
@@ -52,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A1B5D342477716F00DA9B05 /* HUD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
+		2A1B5D352477716F00DA9B05 /* HUD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUD.hpp; sourceTree = "<group>"; };
 		2A233273245295F800A9B864 /* Pipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
 		2A233274245295F800A9B864 /* Pipe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pipe.hpp; sourceTree = "<group>"; };
 		2A307A6E24513F960010C779 /* GameOverState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverState.cpp; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				2A54E88D246FABAF000253FF /* Collision.hpp */,
 				2A8E5340247111B20082600A /* Flash.cpp */,
 				2A8E5341247111B20082600A /* Flash.hpp */,
+				2A1B5D342477716F00DA9B05 /* HUD.cpp */,
+				2A1B5D352477716F00DA9B05 /* HUD.hpp */,
 			);
 			path = "flappy-bird";
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				2ABB7062244828DC00B6B69C /* AssetManager.cpp in Sources */,
 				2A307A7024513F960010C779 /* GameOverState.cpp in Sources */,
 				2A7D5F4524664DEA00D1F74E /* Bird.cpp in Sources */,
+				2A1B5D362477716F00DA9B05 /* HUD.cpp in Sources */,
 				2A4DC91B244A17F300D25CB4 /* SplashState.cpp in Sources */,
 				2AF5F1A824461F3600D95D02 /* main.cpp in Sources */,
 				2AF5F1E2244689FE00D95D02 /* StateMachine.cpp in Sources */,
