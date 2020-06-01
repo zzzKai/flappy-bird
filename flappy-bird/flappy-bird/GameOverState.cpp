@@ -8,6 +8,7 @@
 
 #include <sstream>
 #include <iostream>
+#include <fstream>
 #include "GameOverState.hpp"
 #include "DEFINITIONS.hpp"
 #include "GameState.hpp"
@@ -21,7 +22,28 @@ namespace Kai {
     
     void GameOverState::Init() {
         
+        std::ifstream readFile;
+        readFile.open("Resources/Highscore.txt");
         
+        if (readFile.is_open()) {
+            while (!readFile.eof()) {
+                readFile >> _highScore;
+            }
+        }
+        
+        readFile.close();
+        
+        std::ofstream writeFile("Resources/Highscore.txt");
+        
+        if (writeFile.is_open()) {
+            if (_score > _highScore) {
+                _highScore = _score;
+            }
+            writeFile << _highScore;
+        }
+        
+        writeFile.close();
+                
         _data->assets.LoadTexture("Game Over Background", GAME_OVER_BACKGROUND_FILEPATH);
         _data->assets.LoadTexture("Game Over Title", GAME_TITLE_FILEPATH);
         _data->assets.LoadTexture("Game Over Body", GAME_OVER_BODY_FILEPATH);
