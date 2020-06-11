@@ -20,6 +20,20 @@ namespace Kai {
     }
     
     void GameState::Init() {
+    
+        if (!_hitSoundBuffer.loadFromFile(HIT_SOUND_FILEPATH)) {
+            std::cout << "Error loading Hit Sound Effect" << std::endl;
+        }
+        if (!_wingSoundBuffer.loadFromFile(WING_SOUND_FILEPATH)) {
+            std::cout << "Error loading Wing Sound Effect" << std::endl;
+        }
+        if (!_pointSoundBuffer.loadFromFile(POINT_SOUND_FILEPATH)) {
+            std::cout << "Error loading Point Sound Effect" << std::endl;
+        }
+        
+        _hitSound.setBuffer(_hitSoundBuffer);
+        _wingSound.setBuffer(_wingSoundBuffer);
+        _pointSound.setBuffer(_pointSoundBuffer);
         
         _data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
         
@@ -62,6 +76,7 @@ namespace Kai {
                 if (_gameState != GameStates::eGameOver) {
                     _gameState = GameStates::ePlaying;
                     bird->Tap();
+                    _wingSound.play();
                 }
             }
         }
@@ -94,6 +109,7 @@ namespace Kai {
                 if (collision.CheckSpriteCollision(bird->GetSprite(), 0.7f, landSprites.at(i), 1.0f)) {
                     _gameState = GameStates::eGameOver;
                     clock.restart();
+                    _hitSound.play();
                 }
             }
             
@@ -102,6 +118,7 @@ namespace Kai {
                 if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f)) {
                     _gameState = GameStates::eGameOver;
                     clock.restart();
+                    _hitSound.play();
                 }
             }
             
@@ -114,6 +131,8 @@ namespace Kai {
                         hud->UpdateScore(_score);
                     
                         scoringSprites.erase(scoringSprites.begin() + i);
+                        
+                        _pointSound.play();
                     }
                 }
             }
